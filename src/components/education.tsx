@@ -1,16 +1,7 @@
 import React from 'react';
+import { cvData } from "@/lib/cvData";
 
-interface EducationItem {
-    degree: string;
-    university: string;
-    dates: string;
-}
-
-interface EducationProps {
-    education: EducationItem[];
-}
-
-const Education: React.FC<EducationProps> = ({ education }) => {
+const Education: React.FC = () => {
     return (
         <section>
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
@@ -18,7 +9,7 @@ const Education: React.FC<EducationProps> = ({ education }) => {
                 Education
             </h2>
             <div className="space-y-8">
-                {education.map((item, index) => (
+                {cvData.education.map((item, index) => (
                     <div key={index} className="group">
                         <h3 className="text-lg font-bold text-slate-100 group-hover:text-emerald-300 transition-colors">{item.degree}</h3>
                         <p className="text-emerald-400">{item.university}</p>

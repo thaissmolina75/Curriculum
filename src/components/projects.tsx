@@ -43,7 +43,7 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ projects, allSkills }) => {
     return (
-        <section>
+        <section className="order-2">
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
                 <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">03</span>
                 Selected Projects

@@ -1,25 +1,17 @@
 'use client'
 
 import React from 'react';
+import { cvData } from "@/lib/cvData";
 
-interface Language {
-    name: string;
-    proficiency: string;
-}
-
-interface LanguagesProps {
-    languages: Language[];
-}
-
-const Languages: React.FC<LanguagesProps> = ({ languages }) => {
+const Languages: React.FC = () => {
     return (
-        <section>
+        <section className="order-5 lg:order-2">
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
                 <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">06</span>
                 Languages
             </h2>
             <div className="grid grid-cols-1 gap-4">
-                {languages.map((lang, index) => (
+                {cvData.languages.map((lang, index) => (
                     <div
                         key={index}
                         className="flex items-center justify-between p-4 border border-slate-800 bg-slate-900/30 rounded-lg hover:border-emerald-500/30 transition-colors group"

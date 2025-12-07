@@ -1,22 +1,17 @@
 import React from 'react';
 import { Skill } from "@/lib/types";
+import { cvData } from "@/lib/cvData";
 
-interface SkillsProps {
-    skills: {
-        [category: string]: Skill[];
-    };
-}
-
-const Skills: React.FC<SkillsProps> = ({ skills }) => {
+const Skills: React.FC = () => {
     return (
-        <section>
+        <section className="order-3 lg:order-1">
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
                 <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">05</span>
                 Technical Skills
             </h2>
 
             <div className="space-y-8">
-                {Object.entries(skills).map(([category, skillList]) => (
+                {Object.entries(cvData.skills).map(([category, skillList]) => (
                     <div key={category}>
                         <h3 className="text-sm uppercase tracking-wider font-semibold text-slate-500 mb-4 border-b border-slate-800 pb-2">
                             {category}

@@ -4,7 +4,7 @@ export const cvData = {
     contact: {
         phone: "+54 351 787 8146",
         email: "thais.molina.tech@gmail.com",
-        location: "Relocating to Hong Kong | Greater Bay Area – January 2026 | Open to visa sponsorship (GEP / TechTAS)",
+        location: "Relocating to Hong Kong | – January 2026 | Open to visa sponsorship (GEP / TechTAS)",
         linkedin: "linkedin.com/in/thais-a-molina-42b545354",
         github: "github.com/thaissmolina75",
     },
@@ -73,7 +73,7 @@ export const cvData = {
         ],
         "Data": [
             { name: "Pipeline design", level: 4 }, { name: "validation", level: 4 },
-            { name: "standardization", level: 4 }, { name: "60 % error reduction in production", level: 4 },
+            { name: "standardization", level: 4 },
         ]
     },
     education: [
@@ -90,6 +90,6 @@ export const cvData = {
     ],
     languages: [
         { name: "Spanish", proficiency: "Native" },
-        { name: "English", proficiency: "C1 – Professional proficiency" },
+        { name: "English", proficiency: "C1 – Full Professional proficiency" },
     ],
 };

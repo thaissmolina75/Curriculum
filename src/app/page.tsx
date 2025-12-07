@@ -23,16 +23,18 @@ const Home: React.FC = () => {
                 <div className="space-y-16">
                     <Summary summary={cvData.summary} allSkills={allSkillsFlat} />
 
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                        <div className="lg:col-span-8 space-y-16">
-                            <Education education={cvData.education} />
+                    {/* Flex for mobile stacking, Grid for desktop layout */}
+                    <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-12">
+                        {/* Main Content Column */}
+                        <div className="lg:col-span-8 space-y-16 order-1">
+                            <Education />
                             <Projects projects={cvData.projects} allSkills={allSkillsFlat} />
                             <Experience experience={cvData.experience} allSkills={allSkillsFlat} />
                         </div>
-
-                        <div className="lg:col-span-4 space-y-12">
-                            <Skills skills={cvData.skills} />
-                            <Languages languages={cvData.languages} />
+                        {/* Sidebar Column */}
+                        <div className="lg:col-span-4 space-y-16 order-2 flex flex-col">
+                            <Skills />
+                            <Languages />
                         </div>
                     </div>
                 </div>
