@@ -11,12 +11,12 @@ interface SkillsProps {
     };
 }
 
-const Skills: React.FC<SkillsProps> = ({skills}) => {
+const Skills: React.FC<SkillsProps> = ({ skills }) => {
     return (
         <section>
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
-                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">03</span>
-                Technical Arsenal
+                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">05</span>
+                Technical Skills
             </h2>
 
             <div className="space-y-8">

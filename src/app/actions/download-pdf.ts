@@ -1,7 +1,7 @@
 'use server';
 
 import chromium from '@sparticuz/chromium';
-import {cvData} from '@/lib/cvData';
+import { cvData } from '@/lib/cvData';
 
 export async function downloadCvAsPdf() {
     let browser = null;
@@ -115,11 +115,33 @@ export async function downloadCvAsPdf() {
             <h1>${cvData.name}</h1>
             <div class="contact-info">
                 ${cvData.title}<br>
-                ${cvData.contact.email} • ${cvData.contact.phone} • ${cvData.contact.location}
+                ${cvData.contact.email} • ${cvData.contact.phone} • ${cvData.contact.location}<br>
+                LinkedIn: ${cvData.contact.linkedin} • GitHub: ${cvData.contact.github}
             </div>
 
-            <h2>Professional Summary</h2>
+            <h2>Research Interests</h2>
             <p>${cvData.summary}</p>
+
+            <h2>Education</h2>
+            ${cvData.education.map(edu => `
+                <div class="education-item">
+                    <div class="job-header">
+                        <h3>${edu.degree}</h3>
+                        <span>${edu.dates}</span>
+                    </div>
+                    <div>${edu.university}</div>
+                </div>
+            `).join('')}
+
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+            ${Object.entries(cvData.skills).map(([category, skills]) => `
+                <div class="skill-row">
+                    <div class="skill-category">${category}</div>
+                    <div class="skill-list">${skills.map(s => s.name).join(', ')}</div>
+                </div>
+            `).join('')}
+            </div>
 
             <h2>Experience</h2>
             ${cvData.experience.map(exp => `
@@ -135,24 +157,15 @@ export async function downloadCvAsPdf() {
                 </div>
             `).join('')}
 
-            <h2>Technical Arsenal</h2>
-            <div class="skills-grid">
-            ${Object.entries(cvData.skills).map(([category, skills]) => `
-                <div class="skill-row">
-                    <div class="skill-category">${category}</div>
-                    <div class="skill-list">${skills.map(s => s.name).join(', ')}</div>
-                </div>
-            `).join('')}
-            </div>
-
-            <h2>Education</h2>
-            ${cvData.education.map(edu => `
-                <div class="education-item">
+            <h2>Selected Projects</h2>
+            ${cvData.projects.map(proj => `
+                <div class="job">
                     <div class="job-header">
-                        <h3>${edu.degree}</h3>
-                        <span>${edu.dates}</span>
+                        <h3>${proj.title}</h3>
+                        <span>${proj.dates}</span>
                     </div>
-                    <div>${edu.university}</div>
+                    <div class="job-company">${proj.company}</div>
+                    <ul>${proj.description.map(desc => `<li>${desc}</li>`).join('')}</ul>
                 </div>
             `).join('')}
 
@@ -166,7 +179,7 @@ export async function downloadCvAsPdf() {
         </html>
         `;
 
-        await page.setContent(htmlContent, {waitUntil: 'networkidle0'});
+        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
 
         // @ts-ignore
         const bodyHeight = await page.evaluate(() => document.body.scrollHeight);

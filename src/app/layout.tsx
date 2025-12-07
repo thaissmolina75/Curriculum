@@ -1,5 +1,5 @@
-import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,25 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Axel Molina CV",
-    description: "Java/Kotlin Developer | Full-Stack Problem Solver",
+    title: "Thais A. Molina CV",
+    description: "Research Assistant Candidate – Machine Learning & Robotics",
     icons: {
-        icon: '/favicon.svg',
+        icon: '/favicon-t.svg?v=1',
     },
 };
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+    children,
+}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-        <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-        {children}
-        </body>
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            >
+                {children}
+            </body>
         </html>
     );
 }

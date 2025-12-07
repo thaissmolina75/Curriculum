@@ -11,11 +11,11 @@ interface LanguagesProps {
     languages: Language[];
 }
 
-const Languages: React.FC<LanguagesProps> = ({languages}) => {
+const Languages: React.FC<LanguagesProps> = ({ languages }) => {
     return (
         <section>
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
-                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">05</span>
+                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">06</span>
                 Languages
             </h2>
             <div className="grid grid-cols-1 gap-4">

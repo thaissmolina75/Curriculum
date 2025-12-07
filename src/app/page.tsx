@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Summary from "@/components/summary";
 import Experience from "@/components/experience";
 import Skills from "@/components/skills";
+import Projects from "@/components/projects";
 import Education from "@/components/education";
 import Languages from "@/components/languages";
 
@@ -25,6 +26,7 @@ const Home: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                         <div className="lg:col-span-8 space-y-16">
                             <Education education={cvData.education} />
+                            <Projects projects={cvData.projects} allSkills={allSkillsFlat} />
                             <Experience experience={cvData.experience} allSkills={allSkillsFlat} />
                         </div>
 

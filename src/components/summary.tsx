@@ -11,7 +11,7 @@ const Summary: React.FC<SummaryProps> = ({ summary, allSkills }) => {
         <section>
             <h2 className="text-2xl font-bold text-slate-100 mb-6 flex items-center">
                 <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">01</span>
-                Professional Summary
+                Research Interests
             </h2>
             <div className="text-slate-300 leading-8 text-lg font-light">
                 <LinkifySkills text={summary} allSkills={allSkills} />
