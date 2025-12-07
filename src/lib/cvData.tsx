@@ -1,10 +1,10 @@
 export const cvData = {
-    name: "AXEL LOUI MOLINA",
-    title: "Senior Full-Stack Engineer | Java & Kotlin Specialist",
+    name: "Thais A. Molina",
+    title: "Junior Data Analyst & Applied ML Engineer ",
     contact: {
-        phone: "+5493512282095",
-        email: "loui.developer@gmail.com",
-        location: "Córdoba, Argentina",
+        phone: "+5493517878146",
+        email: "thais.molina.tech@gmail.com",
+        location: "Relocating to Shanghai Jan 2026",
     },
     summary: "Senior Full-Stack Engineer with 8+ years of experience delivering high-performance distributed systems using Java, Kotlin, and Next.js. I specialize in modernizing legacy financial monoliths into scalable, event-driven microservices ready for cloud deployment. Proven track record of solving complex architectural challenges, optimizing data layers for massive scale, and bridging the gap between complex backend logic and modern frontends. Currently expanding architectural scope through advanced GCP and Cybersecurity certifications.",
 
@@ -75,35 +75,35 @@ export const cvData = {
     ],
     skills: {
         "Core Tech Stack": [
-            {name: "Java (Spring Boot)", level: 4}, {name: "Kotlin", level: 4},
-            {name: "Node.js (NestJS)", level: 4}, {name: "React & Next.js", level: 4},
-            {name: "TypeScript", level: 4}, {name: "SQL & PostgreSQL", level: 4}
+            { name: "Java (Spring Boot)", level: 4 }, { name: "Kotlin", level: 4 },
+            { name: "Node.js (NestJS)", level: 4 }, { name: "React & Next.js", level: 4 },
+            { name: "TypeScript", level: 4 }, { name: "SQL & PostgreSQL", level: 4 }
         ],
         "Cloud & DevOps": [
-            {name: "Docker", level: 4},
-            {name: "CI/CD (Jenkins/GitLab)", level: 4},
-            {name: "Kubernetes", level: 3},
-            {name: "AWS (ECS/S3)", level: 3},
-            {name: "Google Cloud (GCP)", level: 2},
-            {name: "Nginx", level: 3}
+            { name: "Docker", level: 4 },
+            { name: "CI/CD (Jenkins/GitLab)", level: 4 },
+            { name: "Kubernetes", level: 3 },
+            { name: "AWS (ECS/S3)", level: 3 },
+            { name: "Google Cloud (GCP)", level: 2 },
+            { name: "Nginx", level: 3 }
         ],
         "Security & Identity": [
-            {name: "OAuth2 & OIDC", level: 3}, {name: "JWT Strategy", level: 3},
-            {name: "Keycloak", level: 3}, {name: "NextAuth.js", level: 4},
-            {name: "OWASP Principles", level: 3}
+            { name: "OAuth2 & OIDC", level: 3 }, { name: "JWT Strategy", level: 3 },
+            { name: "Keycloak", level: 3 }, { name: "NextAuth.js", level: 4 },
+            { name: "OWASP Principles", level: 3 }
         ],
         "Architecture & Data": [
-            {name: "Microservices", level: 4}, {name: "Event-Driven Arch", level: 3},
-            {name: "Kafka / RabbitMQ", level: 3}, {name: "Redis Caching", level: 3},
-            {name: "Hibernate / Prisma", level: 3}, {name: "REST & GraphQL", level: 4}
+            { name: "Microservices", level: 4 }, { name: "Event-Driven Arch", level: 3 },
+            { name: "Kafka / RabbitMQ", level: 3 }, { name: "Redis Caching", level: 3 },
+            { name: "Hibernate / Prisma", level: 3 }, { name: "REST & GraphQL", level: 4 }
         ],
         "Testing & Quality": [
-            {name: "JUnit & Mockito", level: 4}, {name: "TDD / BDD", level: 3},
-            {name: "Integration Testing", level: 4}, {name: "End-to-End Testing", level: 3}
+            { name: "JUnit & Mockito", level: 4 }, { name: "TDD / BDD", level: 3 },
+            { name: "Integration Testing", level: 4 }, { name: "End-to-End Testing", level: 3 }
         ],
         "Soft Skills": [
-            {name: "System Design", level: 4}, {name: "Mentoring", level: 4},
-            {name: "Agile & Scrum", level: 4}, {name: "Problem Solving", level: 4}
+            { name: "System Design", level: 4 }, { name: "Mentoring", level: 4 },
+            { name: "Agile & Scrum", level: 4 }, { name: "Problem Solving", level: 4 }
         ]
     },
     education: [
@@ -124,7 +124,7 @@ export const cvData = {
         },
     ],
     languages: [
-        {name: "English", proficiency: "Full Professional Proficiency (C2)"},
-        {name: "Spanish", proficiency: "Native / Bilingual"},
+        { name: "English", proficiency: "Full Professional Proficiency (C2)" },
+        { name: "Spanish", proficiency: "Native / Bilingual" },
     ],
 };

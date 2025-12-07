@@ -9,7 +9,7 @@ interface ExperienceItemProps {
     allSkills: { name: string; level: number }[];
 }
 
-const ExperienceItem: React.FC<ExperienceItemProps> = ({title, company, dates, description, allSkills}) => {
+const ExperienceItem: React.FC<ExperienceItemProps> = ({ title, company, dates, description, allSkills }) => {
     return (
         <div className="relative pl-8 md:pl-10 border-l border-slate-800 pb-12 last:pb-0 timeline-line group">
             {/* Timeline Dot */}
@@ -26,7 +26,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({title, company, dates, d
                 {description.map((point, index) => (
                     <li key={index} className="text-slate-400 leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-slate-700 before:rounded-full">
                         <span className="text-base">
-                            <LinkifySkills text={point} allSkills={allSkills}/>
+                            <LinkifySkills text={point} allSkills={allSkills} />
                         </span>
                     </li>
                 ))}
@@ -45,16 +45,16 @@ interface ExperienceProps {
     allSkills: { name: string; level: number }[];
 }
 
-const Experience: React.FC<ExperienceProps> = ({experience, allSkills}) => {
+const Experience: React.FC<ExperienceProps> = ({ experience, allSkills }) => {
     return (
         <section>
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
-                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">02</span>
+                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">04</span>
                 Professional Experience
             </h2>
             <div className="mt-6">
                 {experience.map((exp, index) => (
-                    <ExperienceItem key={index} {...exp} allSkills={allSkills}/>
+                    <ExperienceItem key={index} {...exp} allSkills={allSkills} />
                 ))}
             </div>
         </section>

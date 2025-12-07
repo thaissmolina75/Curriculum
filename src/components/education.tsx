@@ -10,11 +10,11 @@ interface EducationProps {
     education: EducationItem[];
 }
 
-const Education: React.FC<EducationProps> = ({education}) => {
+const Education: React.FC<EducationProps> = ({ education }) => {
     return (
         <section>
             <h2 className="text-2xl font-bold text-slate-100 mb-8 flex items-center">
-                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">04</span>
+                <span className="bg-emerald-500/10 text-emerald-400 p-2 rounded mr-3 text-lg">02</span>
                 Education
             </h2>
             <div className="space-y-8">
