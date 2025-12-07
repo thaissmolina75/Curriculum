@@ -90,6 +90,6 @@ export const cvData = {
     ],
     languages: [
         { name: "Spanish", proficiency: "Native" },
-        { name: "English", proficiency: "C1 – professional proficiency" },
+        { name: "English", proficiency: "C1 – Professional proficiency" },
     ],
 };

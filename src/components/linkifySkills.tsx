@@ -2,18 +2,14 @@
 
 import React from 'react';
 import Link from 'next/link';
-
-interface Skill {
-    name: string;
-    level: number;
-}
+import { Skill } from "@/lib/types";
 
 interface LinkifySkillsProps {
     text: string;
     allSkills: Skill[];
 }
 
-const LinkifySkills: React.FC<LinkifySkillsProps> = ({text, allSkills}) => {
+const LinkifySkills: React.FC<LinkifySkillsProps> = ({ text, allSkills }) => {
     const keywordMap = new Map<string, Skill>();
 
     allSkills.forEach(skill => {

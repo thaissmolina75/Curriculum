@@ -1,12 +1,13 @@
 import React from 'react';
 import LinkifySkills from "@/components/linkifySkills";
+import { Skill } from "@/lib/types";
 
 interface ExperienceItemProps {
     title: string;
     company: string;
     dates: string;
     description: string[];
-    allSkills: { name: string; level: number }[];
+    allSkills: Skill[];
 }
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({ title, company, dates, description, allSkills }) => {
@@ -42,7 +43,7 @@ interface ExperienceProps {
         dates: string;
         description: string[];
     }[];
-    allSkills: { name: string; level: number }[];
+    allSkills: Skill[];
 }
 
 const Experience: React.FC<ExperienceProps> = ({ experience, allSkills }) => {
