@@ -4,7 +4,7 @@ export const cvData = {
     contact: {
         phone: "+54 351 787 8146",
         email: "thais.molina.tech@gmail.com",
-        location: "Relocating to Hong Kong | – January 2026 | Open to visa sponsorship (GEP / TechTAS)",
+        location: "Open to visa sponsorship ",
         linkedin: "linkedin.com/in/thais-a-molina-42b545354",
         github: "github.com/thaissmolina75",
     },
